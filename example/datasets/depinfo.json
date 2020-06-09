@@ -156,6 +156,7 @@
     {"id": "org.powermock:powermock-core", "group": 4},
     {"id": "org.apache.commons:commons-text", "group": 2},
     {"id": "org.xmlunit:xmlunit-core", "group": 5},
+    {"id": "org.xmlunit:xmlunit-parent", "group": 5},
     {"id": "org.apache.maven:maven-plugin-api", "group": 4},
     {"id": "org.apache.maven.plugins:maven-enforcer-plugin", "group": 4},
     {"id": "org.apache.maven.doxia:doxia-module-xhtml", "group": 5},
