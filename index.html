@@ -17,6 +17,21 @@
         .jsonUrl('example/datasets/miserables.json')
         .nodeLabel('id')
         .nodeAutoColorBy('group')
+        .nodeThreeObject(node => {
+          // use a sphere as a drag handle
+          const obj = new THREE.Mesh(
+            new THREE.SphereGeometry(10),
+            new THREE.MeshBasicMaterial({ depthWrite: false, transparent: true, opacity: 0 })
+          );
+
+          // add text sprite as child
+          const sprite = new SpriteText(node.id);
+          sprite.color = node.color;
+          sprite.textHeight = 8;
+          obj.add(sprite);
+
+          return obj;
+        })
         .linkThreeObjectExtend(true)
         .linkThreeObject(link => {
           // extend link with text sprite
