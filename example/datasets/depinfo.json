@@ -323,6 +323,6 @@
     {"source": "org.apache.maven.doxia:doxia", "target": "org.codehaus.plexus:plexus-utils", "value": 5},
     {"source": "org.apache.maven.doxia:doxia", "target": "junit:junit", "value": 5},
     {"source": "org.apache.maven.doxia:doxia", "target": "org.apache.maven.doxia:doxia-module-markdown", "value": 5},
-    {"source": "net.es.maddash:maddash", "target": "org.apache.maven.plugins:maven-compiler-plugin", "value": 6},
+    {"source": "net.es.maddash:maddash", "target": "org.apache.maven.plugins:maven-compiler-plugin", "value": 6}
   ]
 }
