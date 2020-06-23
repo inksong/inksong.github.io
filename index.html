@@ -36,13 +36,13 @@
         .linkDirectionalArrowRelPos(1)
         .linkCurvature(0.25)
         .linkThreeObjectExtend(true)
-        .linkThreeObject(link => {
-          // extend link with text sprite
-          const sprite = new SpriteText(`${link.source} --> ${link.target}`);
-          sprite.color = 'lightgrey';
-          sprite.textHeight = 1.5;
-          return sprite;
-        })
+        // .linkThreeObject(link => {
+        //   // extend link with text sprite
+        //   const sprite = new SpriteText(`${link.source} --> ${link.target}`);
+        //   sprite.color = 'lightgrey';
+        //   sprite.textHeight = 1.5;
+        //   return sprite;
+        // })
         .linkPositionUpdate((sprite, { start, end }) => {
           const middlePos = Object.assign(...['x', 'y', 'z'].map(c => ({
             [c]: start[c] + (end[c] - start[c]) / 2 // calc middle point
