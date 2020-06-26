@@ -14,7 +14,7 @@
   <script>
     const Graph = ForceGraph3D()
       (document.getElementById('3d-graph'))
-        .jsonUrl('example/datasets/depinfo_csharp_p1.json')
+        .jsonUrl('example/datasets/depinfo_csharp_p3.json')
         .nodeLabel('id')
         .nodeAutoColorBy('group')
         .nodeThreeObject(node => {
@@ -38,7 +38,7 @@
         .linkThreeObjectExtend(true)
         .linkThreeObject(link => {
           // extend link with text sprite
-          const sprite = new SpriteText(`${link.source} --> ${link.target}`);
+          const sprite = new SpriteText(` `);
           sprite.color = 'lightgrey';
           sprite.textHeight = 1.5;
           return sprite;
