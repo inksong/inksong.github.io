@@ -35,7 +35,8 @@
         .linkDirectionalArrowLength(3.5)
         .linkDirectionalArrowRelPos(1)
         .linkCurvature(0.25)
-        .linkColor('${link.value}'===2?'red':'white')
+        .linkColor(link => link.value%2  ? 'red' : 'white' )
+        .linkOpacity(0.6)
         .linkThreeObjectExtend(true)
         .linkThreeObject(link => {
           // extend link with text sprite
