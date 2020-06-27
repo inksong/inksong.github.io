@@ -56,5 +56,8 @@
     // Spread nodes a little wider
     Graph.d3Force('charge').strength(-120);
 
+     // fit to canvas when engine stops
+    Graph.onEngineStop(() => Graph.zoomToFit(400));
+
   </script>
 </body>
