@@ -35,8 +35,8 @@
         .linkDirectionalArrowLength(3.5)
         .linkDirectionalArrowRelPos(1)
         .linkCurvature(0.25)
-        .linkColor(link => link.value%2  ? 'red' : 'white' )
-        .linkOpacity(0.6)
+        .linkColor(link => link.value%2  ? 'white' : 'red' )
+        .linkOpacity(link => link.value%2  ? 0.2 : 0.9 )
         .linkThreeObjectExtend(true)
         .linkThreeObject(link => {
           // extend link with text sprite
