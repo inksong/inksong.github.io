@@ -14,7 +14,7 @@
   <script>
     const Graph = ForceGraph3D()
       (document.getElementById('3d-graph'))
-        .jsonUrl('example/datasets/depinfo_csharp_p3.json')
+        .jsonUrl('example/datasets/depinfo_maven_v1.json')
         .nodeLabel('id')
         .nodeAutoColorBy('group')
         .nodeThreeObject(node => {
@@ -35,11 +35,10 @@
         .linkDirectionalArrowLength(3.5)
         .linkDirectionalArrowRelPos(1)
         .linkCurvature(0.25)
-        .linkColor(link => link.value%2  ? 'white' : 'red' )
         .linkThreeObjectExtend(true)
         .linkThreeObject(link => {
           // extend link with text sprite
-          const sprite = new SpriteText(` `);
+          const sprite = new SpriteText(`${link.value}`);
           sprite.color = 'lightgrey';
           sprite.textHeight = 1.5;
           return sprite;
